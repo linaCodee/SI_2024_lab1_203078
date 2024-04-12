@@ -1,0 +1,117 @@
+4. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git init .
+
+5. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git remote add origin https://github.com/linaCodee/SI_2024_lab1_203078.git
+
+6. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ nano README.md
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git add README.md
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git commit -m "Initial commit"
+
+7. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git add "SILab1_2.java"
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git add "SILab1_1.java"
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git add "SILab1Main.java"
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git commit -m "Add starter code"
+[master 9482803] Add starter code
+ 3 files changed, 47 insertions(+)
+ create mode 100644 SILab1Main.java
+ create mode 100644 SILab1_1.java
+ create mode 100644 SILab1_2.java
+
+8. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git push -u origin master
+
+9. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout -b bug1
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout -b bug2
+
+10. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout bug1
+Switched to branch 'bug1'
+
+11. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ nano SILab1_1.java
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git add "SILab1_1.java"
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git commit -m "Fix wrong condition in filterOddLengthStrings"
+
+12. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout bug2
+M       SILab1_1.java
+Switched to branch 'bug2'
+
+13. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ nano SILab1_2.java
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git add "SILab1_2.java"
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git commit -m "Fix wrong condition in makeBigStringFrom"
+
+14. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout bug1
+M       SILab1_1.java
+M       SILab1_2.java
+Switched to branch 'bug1'
+
+15. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ nano SILab1Main.java
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git add "SILab1Main.java"
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git commit -m "Call method filterOddLengthStrings in main class"
+
+16. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout bug2
+M       SILab1Main.java
+M       SILab1_1.java
+M       SILab1_2.java
+Switched to branch 'bug2'
+
+17. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ nano SILab1Main.java
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git add "SILab1Main.java"
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git commit -m "Call method makeBigStringFrom in main class"
+
+18. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout bug1
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git push 
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout bug2
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git push 
+
+19. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout master
+M       SILab1Main.java
+M       SILab1_1.java
+M       SILab1_2.java
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+20. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git merge bug1
+Updating 9482803..e0bb217
+Fast-forward
+ SILab1Main.java | 1 +
+ SILab1_1.java   | 4 ++--
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+
+21.lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git push origin master
+
+22. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout bug2
+M       SILab1Main.java
+M       SILab1_1.java
+M       SILab1_2.java
+Switched to branch 'bug2'
+Your branch is up to date with 'origin/bug2'.
+
+23. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git rebase master
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git add SILab1Main.java
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git rebase --continue
+
+24. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout master
+
+25. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git merge bug
+2
+Updating e0bb217..b9a17c7
+Fast-forward
+ SILab1Main.java | 9 +++++++++
+ SILab1_2.java   | 4 ++--
+ 2 files changed, 11 insertions(+), 2 deletions(-)
+
+26. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git push
+
+27. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout
+bug1
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git push
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout bug2
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git push
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git push --fo
+rce
+
+28. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ touch logs.txt
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git log>>logs.txt
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ nano logs.txt
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git add logs.
+txt 203078.txt
+lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git commit -m"Final commit"
+
+29. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git push
