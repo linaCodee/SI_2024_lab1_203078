@@ -1,10 +1,13 @@
 4. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git init .
+Иницијализација на Git репозиториум во доректориумот
 
 5. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git remote add origin https://github.com/linaCodee/SI_2024_lab1_203078.git
+поврзување со репозиториумот на git
 
 6. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ nano README.md
 lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git add README.md
 lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git commit -m "Initial commit"
+креирање на readme.md и нов commit
 
 7. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git add "SILab1_2.java"
 lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git add "SILab1_1.java"
@@ -15,50 +18,62 @@ lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git commit -m "Add starter
  create mode 100644 SILab1Main.java
  create mode 100644 SILab1_1.java
  create mode 100644 SILab1_2.java
+додавање на трите java фајлови
 
 8. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git push -u origin master
+додавање на трите фајлови на репозиториумот на гит
 
 9. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout -b bug1
 lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout -b bug2
+креирање гранки
 
 10. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout bug1
 Switched to branch 'bug1'
+префрлање на гранката bug1
 
 11. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ nano SILab1_1.java
 lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git add "SILab1_1.java"
 lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git commit -m "Fix wrong condition in filterOddLengthStrings"
+со nano го менуваме документот SILab1_1.java
 
 12. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout bug2
 M       SILab1_1.java
 Switched to branch 'bug2'
+префрлање на гранката bug2 и го додаваме потоа на локалниот репозиториум
 
 13. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ nano SILab1_2.java
 lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git add "SILab1_2.java"
 lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git commit -m "Fix wrong condition in makeBigStringFrom"
+исто со nano го менуваме фајлот SILab1_2.java и го додаваме потоа на локалниот репозиториум
 
 14. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout bug1
 M       SILab1_1.java
 M       SILab1_2.java
 Switched to branch 'bug1'
+префрлање на гранка bug1
 
 15. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ nano SILab1Main.java
 lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git add "SILab1Main.java"
 lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git commit -m "Call method filterOddLengthStrings in main class"
+со nano го менуваме фајлот SILab1Main.java и го додаваме потоа на локалниот репозиториум
 
 16. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout bug2
 M       SILab1Main.java
 M       SILab1_1.java
 M       SILab1_2.java
 Switched to branch 'bug2'
+префрлање на гранка bug2
 
 17. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ nano SILab1Main.java
 lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git add "SILab1Main.java"
 lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git commit -m "Call method makeBigStringFrom in main class"
+со nano го менуваме фајлот SILab1Main.java и го додаваме потоа на локалниот репозиториум
 
 18. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout bug1
 lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git push 
 lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout bug2
 lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git push 
+се прави push на промените од локалниот на git репозиториумот 
 
 19. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout master
 M       SILab1Main.java
@@ -66,6 +81,7 @@ M       SILab1_1.java
 M       SILab1_2.java
 Switched to branch 'master'
 Your branch is up to date with 'origin/master'.
+префрлање на гранката master 
 
 20. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git merge bug1
 Updating 9482803..e0bb217
@@ -73,8 +89,10 @@ Fast-forward
  SILab1Main.java | 1 +
  SILab1_1.java   | 4 ++--
  2 files changed, 3 insertions(+), 2 deletions(-)
+промените на гранка bug1 се префрлаат на гранката master
 
 21.lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git push origin master
+се прави push на промените од master гранката на локалниот репозиториум на оној на git
 
 22. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout bug2
 M       SILab1Main.java
@@ -82,22 +100,26 @@ M       SILab1_1.java
 M       SILab1_2.java
 Switched to branch 'bug2'
 Your branch is up to date with 'origin/bug2'.
+префрлање на гранка bug2 
 
 23. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git rebase master
 lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git add SILab1Main.java
 lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git rebase --continue
+правиме rebase 
 
 24. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout master
+префрлање на гранката master 
 
-25. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git merge bug
-2
+25. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git merge bug2
 Updating e0bb217..b9a17c7
 Fast-forward
  SILab1Main.java | 9 +++++++++
  SILab1_2.java   | 4 ++--
  2 files changed, 11 insertions(+), 2 deletions(-)
+спојување на гранката master со гранката bug2
 
 26. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git push
+правиме push на промените од локалниот репозиториум на репозиториумот на git 
 
 27. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout
 bug1
@@ -106,6 +128,7 @@ lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git checkout bug2
 lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git push
 lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git push --fo
 rce
+правиме push на гранките bug1 и bug2 од локалниот на репозиториумот на git 
 
 28. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ touch logs.txt
 lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git log>>logs.txt
@@ -113,5 +136,7 @@ lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ nano logs.txt
 lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git add logs.
 txt 203078.txt
 lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git commit -m"Final commit"
+преку touch и git log>>logs.txt правиме копија на сите логови и воедно ја додаваме таа датотека заедно со 203078.txt
 
 29. lina_code@DESKTOP-UQBHI5C:/mnt/c/SI_2024_lab1_203078$ git push
+правиме push на сите промени од локалниот репозиториум на репозиториумот на git
