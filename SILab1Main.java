@@ -17,7 +17,11 @@ public class SILab1Main {
 	System.out.println(SILab1_1.filterOddLengthStrings(list))
 =======
 	System.out.println(SILab1_1.filterOddLengthStrings(list));
+<<<<<<< HEAD
 	System.out.println(SILab1_2.makeBigStringFrom(list));
 >>>>>>> 8d660dd (Fix wrong condition in makeBigStringFrom)
+=======
+ 	 System.out.println(SILab1_2.makeBigStringFrom(list));
+>>>>>>> 017bb72 (Call method makeBigStringFrom in main class)
     }
 }
